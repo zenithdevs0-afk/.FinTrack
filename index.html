@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Financial Dashboard</title>
+    <link rel="stylesheet" href="style.css"><script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>FinTrack</h2>
+            <nav>
+                <ul><li>Dashboard</li><li>Reports</li><li>Settings</li></ul>
+            </nav>
+        </aside>
+       
+        <main class="dashboard">
+            <header>
+                <h1>Welcome Back</h1>
+            </header>
+            <div class="card-grid">
+                <div class="card" id="expenseForm">
+                    <input type="text" id="desc" placeholder="Expense description">
+                    <input type="number" id="amount" placeholder="Amount">
+                    <button onclick="addExpense()">Add Transaction</button><button onclick="clearAll()" style="background-color: #ef4444; margin-top: 10px;">clear All</button>
+
+
+                </div>
+                <div class="card">
+                    <h3>Recent Transactions</h3>
+                    <ul id="expenseList"></ul>
+<div class="card" style="margin-bottom: 20px;"> 
+    <h3><span id="total">0</span> $</h3> </div>
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
