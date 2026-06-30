@@ -1,0 +1,18 @@
+
+
+<div class="card" style="max-width: 400px; margin: 100px auto; text-align: center;">
+    <h2>login</h2>
+    <input type="text" id="username" placeholder="user name">
+    <button onclick="login()" class="btn-add">login</button>
+</div>
+
+<script>
+    function login() {
+        const user = document.getElementById('username').value;
+        if(user) {
+            localStorage.setItem('currentUser', user);
+            window.location.href = 'index.html'; // الانتقال للصفحة الرئيسية
+        }
+    }
+</script>
+
